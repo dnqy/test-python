@@ -28,9 +28,9 @@ try:
   while True:
     result = instance.read()
     if result.is_valid():
-      print("Last valid input: " + str(datetime.datetime.now()))
-      print("Temperature: {} C".format(result.temperature))
-      print("Humidity: {} %%".format(result.humidity))
+      client.publish("Last valid input: " + str(datetime.datetime.now()))
+      client.publish("Temperature: {} C".format(result.temperature))
+      client.publish("Humidity: {} %%".format(result.humidity))
     time.sleep(wait)
 except KeyboardInterrupt:
   GPIO.cleanup()
