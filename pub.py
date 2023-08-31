@@ -2,7 +2,7 @@ import time
 import paho.mqtt.client as mqtt
 
 #configuration
-host = 'broker' 
+host = 'ec2-3-112-43-17.ap-northeast-1.compute.amazonaws.com' 
 port = 1883 
 topic = 'test' 
 wait = 1
