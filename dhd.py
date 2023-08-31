@@ -2,6 +2,7 @@ import time
 import RPi.GPIO as GPIO
 import dht11
 import datetime
+import paho.mqtt.client as mqtt
 
 # configuration
 pin = 14
