@@ -1,7 +1,7 @@
 import paho.mqtt.client as mqtt
 
 #configuration
-host = 'ec2-3-112-43-17.ap-northeast-1.compute.amazonaws.com'
+host = '3.12.43.17'
 port = 1883
 topic = 'test'
 
